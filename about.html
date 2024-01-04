@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/id-grotesk" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .post-container {
+        padding: 20px 10px 35px 10px;
+      }
+
+      @media (min-width: 800px) {
+        .post-container {
+          padding: 20px 45px 35px 45px;
+        }
+      }
+    </style>
+    <title>About me</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="title">
+        <img src="images/logo.png" draggable="false"/>
+        <h1>My Coding Journal</h1>
+      </a>
+
+      <div id="sidebar-toggle"><i class="fa-solid fa-bars" id="open-sidebar"></i></div>
+
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+      </nav>
+      <nav class="sidebar hidden" id="sidebar">
+        <a href="index.html" class="nav-option first-option">Home</a>
+        <a href="about.html" class="nav-option last-option">About Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="about">
+        <div class="about-intro">
+          <img src="images/milosocute.jpeg" class="pfp" draggable="false">
+          <div>
+            <h1>Hi there! My name is Xuan and welcome to my learning journal.</h1>
+            <p class="about-content">After one year of going through tutorials after tutorials and creating projects on my own, I finally made a big leap by purchasing online courses, significantly improving my web development skills.</p>
+          </div>
+        </div>
+
+        <div class="about-details">
+          <h3 class="about-title">How did I discover about coding?</h3>
+          <p class="about-content">When I was 8 years old, my brother who was 11 years old wanted to make some money(probably got influence by those finance influencers), and... he found out developer had a very high salary. You are probably wondering what all of this has to do with me. That's because my brother didn't do anything he had talked about, instead, he asked me to do all of it(a good brother isn't he? for real), yeah and that's exactly when I fell in love with coding(he also asked me to start a youtube channel and I did).</p>
+        </div>
+      </div>
+
+      <h1 class="recent-post">Recent Posts</h1>
+
+      <div class="post-container" id="post-container"></div>
+
+      <div class="view-container"><h1 class="view" id="view-more">View More</h1></div>
+      <div class="view-container"><h1 class="view hidden" id="view-less">View Less</h1></div>
+    </main>
+
+    <footer>
+      <p class="footer-title">My Coding Journal</p>
+      <p class="copyright">Copyright ©<span class="year">2024</span></p>
+      <a href="mailto:yorkxuan7@gmail.com" class="social"><img src="images/gmail.png" class="social-icon" draggable="false">Gmail</a>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
