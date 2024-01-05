@@ -12,7 +12,7 @@ function getBlogId(parameter) {
 
 const { title, date2, image, remark, detail } = blog;
 
-document.title = `${title} | My Learning Journal`;
+document.title = `${title}`;
 blogInfo.innerHTML += `
     <div class="info">
         <p class="blog-date">${date2}</p>
