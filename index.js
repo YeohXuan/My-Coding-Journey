@@ -1,5 +1,7 @@
 import { postArr } from "./post.js";
 let totalPostRendered = 3;
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
 
 document.addEventListener("click", (e) => {
   if (e.target.id === "open-sidebar") {
